@@ -8,9 +8,9 @@ services:
     ports:
       - "8200:8200"
     environment:
-      VAULT_DEV_ROOT_TOKEN_ID: 27840943-792c-4c27-a521-a6359f27bdbb
-      VAULT_API_ADDR: http://0.0.0.0:8200
+      VAULT_API_ADDR: http://127.0.0.1:8200
       VAULT_LOCAL_CONFIG: vault_config.json
+      VAULT_DEV_ROOT_TOKEN_ID: myroot
     cap_add:
       - IPC_LOCK
     volumes:
