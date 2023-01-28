@@ -1,4 +1,4 @@
-# Spring boot and Vault
+# Spring Boot and Vault
 
 Execute a docker-compose.yml file inside the infra folder.
 
