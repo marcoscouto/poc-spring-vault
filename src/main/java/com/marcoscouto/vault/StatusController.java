@@ -22,7 +22,6 @@ public class StatusController {
     @GetMapping("/v1")
     public Map getResponseV1() {
         // write and read - just v1
-
         var featuresPath = "/features/first_feature";
         vaultTemplate.write(featuresPath, Map.of("enabled", true));
         return vaultTemplate.read(featuresPath).getData();
